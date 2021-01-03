@@ -1,13 +1,13 @@
 const orm = require ("../config/orm.js")
 
-const burgers = {
+const burger = {
     selectAll: (cb) => {
         orm.selectAll("burgers", (res) => {
             cb(res);
         });
     },
-    insertOne: (newName, cb) => {
-        orm.insertOne("burgers", "burger_name", newName, (res) => {
+    insertOne: (newBurg, cb) => {
+        orm.insertOne("burgers", "burger_name", newBurg, (res) => {
             cb(res);
         });
     },

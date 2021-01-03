@@ -1,10 +1,10 @@
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
         <h1 class="display-4">Cook-Da-Burger, then please Eat-Da-Burger</h1>
-        <p class="lead">I'll glady pay you Tuesday for a hamburger today</p>
+        <p class="lead">You can pay me Tuesday for a hamburger today</p>
         <form id="create-burger" class="button-size">
             <textarea type="text" name="burger-name" class="form-control form-control-lg"></textarea>
-            <button type="submit" class="btn btn-success">Cook it</button>
+            <button type="submit" class="btn btn-success">COOK IT UP</button>
         </form>
     </div>
 </div>
@@ -12,14 +12,14 @@
 <div class="container">
     <div class="row">
         <div class="col-sm">
-            <h2>Cooked Burgers</h2>
+            <h2>Burgers Cooked</h2>
             <div>
                 <ul>
                     {{#each burgers_cooked}}
                     <li>
                         <p>
                             {{this.burger_name}}
-                            <button data-burgerid="{{this.id}}" type="button" class="eat btn btn-warning">Eat it!</button>
+                            <button data-burgerid="{{this.id}}" type="button" class="eat btn btn-warning">EAT IT UP</button>
                         </p>
                     </li>
                     {{/each}}
@@ -27,10 +27,10 @@
             </div>
         </div>
         <div class="col-sm">
-            <img src="./assets/burger.jpg" alt="burger" height="500px">
+            <img src="../assets/burg.jpg" alt="burger" height="500px">
         </div>
         <div class="col-sm">
-            <h2>Eaten Burgers</h2>
+            <h2>Burgers Eaten</h2>
             <div>
                 <ul>
                     {{#each burgers_eaten}}
